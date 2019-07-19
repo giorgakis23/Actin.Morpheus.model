@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<MorpheusModel version="3">
+    <Description>
+        <Details></Details>
+        <Title>Actin.gol.2D</Title>
+    </Description>
+    <Space>
+        <Lattice class="hexagonal">
+            <Neighborhood>
+                <Order>1</Order>
+            </Neighborhood>
+            <Size symbol="size" value="100, 100, 0"/>
+            <BoundaryConditions>
+                <Condition boundary="x" type="periodic"/>
+                <Condition boundary="y" type="periodic"/>
+            </BoundaryConditions>
+        </Lattice>
+        <SpaceSymbol symbol="space"/>
+    </Space>
+    <Time>
+        <StartTime value="0"/>
+        <StopTime value="100"/>
+        <TimeSymbol symbol="time"/>
+        <SaveInterval value="0"/>
+    </Time>
+    <CellTypes>
+        <CellType class="biological" name="actin">
+            <Property symbol="f" value="0" name="filament"/>
+            <Property symbol="s" value="0" name="sum_neighbours"/>
+            <Property symbol="t" value="0" name="tip"/>
+            <NeighborhoodReporter>
+                <Input scaling="cell" value="f"/>
+                <Output symbol-ref="s" mapping="sum"/>
+            </NeighborhoodReporter>
+            <System solver="heun" time-step="1.0">
+                <Rule symbol-ref="f">
+                    <Expression>if((f==0 and s==1), 1, f)</Expression>
+                </Rule>
+                <Rule symbol-ref="t">
+                    <Expression>if(( f==1 and s==0), 1, t)</Expression>
+                </Rule>
+            </System>
+            <FlipCellMotion neighborhood="2" time-step="0.1">
+                <Condition>((f==0 and rand_uni(0,1) &lt; 0.5))</Condition>
+            </FlipCellMotion>
+        </CellType>
+    </CellTypes>
+    <Global>
+        <Constant symbol="t" value="0"/>
+        <Constant symbol="f" value="0"/>
+    </Global>
+    <CellPopulations>
+        <Population size="0" type="actin">
+            <InitProperty symbol-ref="f">
+                <Expression>if(rand_uni(0,1) > 0.75, 1, 0)</Expression>
+            </InitProperty>
+            <InitCircle mode="regular" number-of-cells="100">
+                <Dimensions radius="30.0" center="50.0, 50.0, 50.0"/>
+            </InitCircle>
+        </Population>
+    </CellPopulations>
+    <Analysis>
+        <Gnuplotter>
+            <Plot>
+                <Cells value="f">
+                    <ColorMap>
+                        <Color value="0.0" color="light-turquoise"/>
+                        <Color value="1.0" color="dark-salmon"/>
+                    </ColorMap>
+                </Cells>
+            </Plot>
+            <Terminal name="png"/>
+        </Gnuplotter>
+    </Analysis>
+</MorpheusModel>
