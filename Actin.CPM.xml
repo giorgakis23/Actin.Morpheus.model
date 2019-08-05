@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<MorpheusModel version="4">
+    <Description>
+        <Details></Details>
+        <Title></Title>
+    </Description>
+    <Space>
+        <Lattice class="hexagonal">
+            <Neighborhood>
+                <Order>1</Order>
+            </Neighborhood>
+            <Size symbol="size" value="600, 600, 0"/>
+            <BoundaryConditions>
+                <Condition boundary="x" type="periodic"/>
+                <Condition boundary="y" type="periodic"/>
+            </BoundaryConditions>
+        </Lattice>
+        <SpaceSymbol symbol="space"/>
+    </Space>
+    <Time>
+        <StartTime value="0"/>
+        <StopTime value="200000"/>
+        <TimeSymbol symbol="time"/>
+    </Time>
+    <CellTypes>
+        <CellType class="biological" name="actin">
+            <VolumeConstraint target="500" strength="1"/>
+            <SurfaceConstraint target="0.9" mode="aspherity" strength="1"/>
+            <Property symbol="t" value="1"/>
+            <System solver="euler" time-step="1.0"/>
+            <CellDivision daughterID="daughter" division-plane="major" orientation="0.0, 1.0, 0.0">
+                <Condition>t==1 and mod(time, 30000)==0 and time &lt; 90000 </Condition>
+                <Triggers>
+                    <Rule symbol-ref="t">
+                        <Expression>if(daughter == 1, 0, 1)</Expression>
+                    </Rule>
+                </Triggers>
+            </CellDivision>
+            <!--    <Disabled>
+        <FreezeMotion>
+            <Condition>t > 90000</Condition>
+        </FreezeMotion>
+    </Disabled>
+-->
+        </CellType>
+        <CellType class="biological" name="Arp2/3">
+            <VolumeConstraint target="500" strength="1"/>
+            <SurfaceConstraint target="0.8" mode="aspherity" strength="1"/>
+            <DirectedMotion direction="0.5, 0.0, 0.0" strength="0.1"/>
+            <Property symbol="tsum" value="0.0"/>
+            <ChangeCellType newCellType="Arp2/3-F">
+                <Condition>tsum > 0</Condition>
+                <Triggers/>
+            </ChangeCellType>
+            <NeighborhoodReporter>
+                <Input scaling="cell" value="t"/>
+                <Output symbol-ref="tsum" mapping="sum"/>
+            </NeighborhoodReporter>
+            <FreezeMotion>
+                <Condition>tsum > 0.1</Condition>
+            </FreezeMotion>
+            <Property symbol="b2" value="1"/>
+        </CellType>
+        <CellType class="biological" name="Arp2/3-F">
+            <VolumeConstraint target="500" strength="1"/>
+            <SurfaceConstraint target="0.9" mode="aspherity" strength="1"/>
+            <Property symbol="b" value="1" name="branching"/>
+            <CellDivision daughterID="actin" division-plane="major" orientation="1.0, 0.0, 0.0">
+                <Condition> b==1</Condition>
+                <Triggers>
+                    <Rule symbol-ref="b">
+                        <Expression>if(actin==1, 0, 1)</Expression>
+                    </Rule>
+                </Triggers>
+            </CellDivision>
+            <NeighborhoodReporter>
+                <Input scaling="cell" value="b2"/>
+                <Output symbol-ref="b" mapping="sum"/>
+            </NeighborhoodReporter>
+        </CellType>
+    </CellTypes>
+    <CellPopulations>
+        <Population size="1" type="actin">
+            <Cell id="0">
+                <Nodes>10, 10, 10</Nodes>
+            </Cell>
+            <!--    <Disabled>
+        <InitCircle mode="regular" number-of-cells="2">
+            <Dimensions radius="350.0" center="250.0, 150.0, 0.0"/>
+        </InitCircle>
+    </Disabled>
+-->
+            <InitPoissonDisc number-of-cells="4"/>
+        </Population>
+        <Population size="1" type="Arp2/3">
+            <Cell id="0">
+                <Nodes>5, 5, 5</Nodes>
+            </Cell>
+            <!--    <Disabled>
+        <InitCircle mode="random" number-of-cells="5">
+            <Dimensions radius="150.0" center="150.0, 200.0, 0.0"/>
+        </InitCircle>
+    </Disabled>
+-->
+            <InitPoissonDisc number-of-cells="&#xa;5"/>
+        </Population>
+        <Population size="0" type="Arp2/3-F">
+            <Cell id="0">
+                <Nodes>1, 1, 1</Nodes>
+            </Cell>
+        </Population>
+    </CellPopulations>
+    <CPM>
+        <Interaction default="0">
+            <Contact type1="actin" type2="actin" value="-4"/>
+            <Contact type1="Arp2/3-F" type2="Arp2/3-F" value="-4"/>
+        </Interaction>
+        <ShapeSurface scaling="norm">
+            <Neighborhood>
+                <Order>3</Order>
+            </Neighborhood>
+        </ShapeSurface>
+        <MonteCarloSampler stepper="edgelist">
+            <MCSDuration value="1"/>
+            <MetropolisKinetics temperature="3" yield="5"/>
+            <Neighborhood>
+                <Order>1</Order>
+            </Neighborhood>
+        </MonteCarloSampler>
+    </CPM>
+    <Analysis>
+        <Gnuplotter time-step="1000" decorate="false">
+            <Plot>
+                <Cells min="0" max="1">
+                    <ColorMap>
+                        <Color value="1" color="red"/>
+                        <Color value="0" color="green"/>
+                    </ColorMap>
+                </Cells>
+            </Plot>
+            <Terminal name="png"/>
+        </Gnuplotter>
+        <Logger time-step="100">
+            <Input>
+                <Symbol symbol-ref="celltype.actin.size"/>
+                <Symbol symbol-ref="cell.center.y"/>
+                <Symbol symbol-ref="cell.center.z"/>
+            </Input>
+            <Output>
+                <TextOutput/>
+            </Output>
+            <Plots>
+                <Plot log-commands="true" time-step="100000">
+                    <Style point-size="0.5" grid="true" style="points"/>
+                    <Terminal terminal="png"/>
+                    <X-axis minimum="100000" maximum="0.0">
+                        <Symbol symbol-ref="time"/>
+                    </X-axis>
+                    <Y-axis minimum="0.0" maximum="1000">
+                        <Symbol symbol-ref="celltype.actin.size"/>
+                    </Y-axis>
+                </Plot>
+            </Plots>
+        </Logger>
+    </Analysis>
+    <Global>
+        <Constant symbol="t" value="0.0"/>
+        <Constant symbol="b2" value="1"/>
+    </Global>
+</MorpheusModel>
