@@ -1,0 +1,1418 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<MorpheusModel version="4">
+    <Description>
+        <Details></Details>
+        <Title>CamkII_and_staff</Title>
+    </Description>
+    <Space>
+        <Lattice class="hexagonal">
+            <Neighborhood>
+                <Order>1</Order>
+            </Neighborhood>
+            <Size symbol="size" value="100, 100, 0"/>
+            <BoundaryConditions>
+                <Condition boundary="x" type="periodic"/>
+                <Condition boundary="y" type="periodic"/>
+            </BoundaryConditions>
+        </Lattice>
+        <SpaceSymbol symbol="space"/>
+    </Space>
+    <Time>
+        <StartTime value="0"/>
+        <StopTime symbol="stop" value="100.0"/>
+        <TimeSymbol symbol="time"/>
+    </Time>
+    <Analysis>
+        <Logger time-step="stop/500">
+            <Input>
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaMCa4"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="WASP"/>
+    </Disabled>
+-->
+                <Symbol symbol-ref="_2Ca"/>
+                <!--    <Disabled>
+        <Symbol symbol-ref="SSH1_CaN_CaMCa4"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="AMP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="ROCK"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="PDE1"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaMKIIp_CaMCa4"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="I1PKAc"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="_2PKAc"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="RhoGEF_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaMKIIp_PP1"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaMKIIp"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="RhoGEF_A_PP1"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="Cdc42GEF_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="PDE1_CaMCa4"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="RhoGDP_RhoGEF_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="LIMK_ROCK_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="AC8_CaMCa4"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="Cofilin_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="I1"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="GAP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="Ng"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="GAP_A"/>
+    </Disabled>
+-->
+                <Symbol symbol-ref="CaM"/>
+                <!--    <Disabled>
+        <Symbol symbol-ref="PP1_I1p"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="G_actin_ADP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaN"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="GAP_A_PP1"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="RhoGTP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="SSH1_A_CaMKIIp"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="G_actin_ATP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="I1p_CaN_CaMCa4"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaMKII_CaMCa4"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="AC1_CaMCa4"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="RhoGDP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="Arp2_3_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="LIMK_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="GAP_CaMKIIp"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="PP1"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="PP1_CaMKIIp"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="I1p"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="PDE1_CaMCa4_cAMP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="RhoGEF"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="PDE1_CaMCa4__cAMP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="RhoGEF_CaMKIIp"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="PP1_Cdc42GEF_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="Cdc42GTP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="SSH1"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="_2_cAMP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="AC1"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="AC8_CaMCa4_ATP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="_cAMP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="Cdc42GTP_WASP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="_2CaMKIIp"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="AC8"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="PKAc"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaMKII_CaMKIIp"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="Cdc42GDP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="LIMK_A_SSH1_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="PKA__cAMP_2"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="PKA__cAMP_4"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="Cdc42GEF"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaN_CaM"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="AC1_CaMCa4_ATP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="PP1_I1_CaN_CaMCa4"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaMKII_F_actin_ATP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="Cdc42GDP_Cdc42GEF_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="PKAr"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="Arp2_3"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaMKII_F_actin_ADP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaM_Ng"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="Cdc42GTP_GAP_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaN_CaMCa2"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaN_CaMCa4"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="ROCK_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaMKII_G_actin_ADP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="SSH1_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaMKII"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="ATP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="F_actin_ADP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="Cofilin_SSH1_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="LIMK"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="Cofilin"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="Cdc42GEF_CaMKIIp"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="F_actin_ATP"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="RhoGTP_GAP_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="Cofilin_A_LIMK_A"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="CaMCa2"/>
+    </Disabled>
+-->
+                <!--    <Disabled>
+        <Symbol symbol-ref="PKA"/>
+    </Disabled>
+-->
+            </Input>
+            <Output>
+                <TextOutput/>
+            </Output>
+            <Plots>
+                <Plot>
+                    <Style style="lines"/>
+                    <Terminal terminal="png"/>
+                    <X-axis>
+                        <Symbol symbol-ref="time"/>
+                    </X-axis>
+                    <Y-axis>
+                        <Symbol symbol-ref="CaMCa4"/>
+                        <Symbol symbol-ref="WASP"/>
+                        <Symbol symbol-ref="_2Ca"/>
+                        <Symbol symbol-ref="SSH1_CaN_CaMCa4"/>
+                        <Symbol symbol-ref="AMP"/>
+                        <Symbol symbol-ref="ROCK"/>
+                        <Symbol symbol-ref="PDE1"/>
+                        <Symbol symbol-ref="CaMKIIp_CaMCa4"/>
+                        <Symbol symbol-ref="I1PKAc"/>
+                        <Symbol symbol-ref="_2PKAc"/>
+                        <Symbol symbol-ref="RhoGEF_A"/>
+                        <Symbol symbol-ref="CaMKIIp_PP1"/>
+                        <Symbol symbol-ref="CaMKIIp"/>
+                        <Symbol symbol-ref="RhoGEF_A_PP1"/>
+                        <Symbol symbol-ref="Cdc42GEF_A"/>
+                        <Symbol symbol-ref="PDE1_CaMCa4"/>
+                        <Symbol symbol-ref="RhoGDP_RhoGEF_A"/>
+                        <Symbol symbol-ref="LIMK_ROCK_A"/>
+                        <Symbol symbol-ref="AC8_CaMCa4"/>
+                        <Symbol symbol-ref="Cofilin_A"/>
+                        <Symbol symbol-ref="I1"/>
+                        <Symbol symbol-ref="GAP"/>
+                        <Symbol symbol-ref="Ng"/>
+                        <Symbol symbol-ref="GAP_A"/>
+                        <Symbol symbol-ref="CaM"/>
+                    </Y-axis>
+                </Plot>
+            </Plots>
+            <Restriction exclude-medium="true"/>
+        </Logger>
+    </Analysis>
+    <Global>
+        <System solver="runge-kutta-adaptive" time-step="stop/1000">
+            <DiffEqn symbol-ref="_2Ca" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1 * (_2Ca / cell) * (CaM / cell) - k2 * (CaMCa2 / cell))) - (1) * (cell * (k1_1 * (CaMCa2 / cell) * (_2Ca / cell) - k2_1 * (CaMCa4 / cell))) - (1) * (cell * (k1_5 * (CaN_CaM / cell) * (_2Ca / cell) - k2_5 * (CaN_CaMCa2 / cell))) - (1) * (cell * (k1_6 * (CaN_CaMCa2 / cell) * (_2Ca / cell) - k2_6 * (CaN_CaMCa4 / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaM" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1 * (_2Ca / cell) * (CaM / cell) - k2 * (CaMCa2 / cell))) - (1) * (cell * (k1_2 * (CaN / cell) * (CaM / cell) - k2_2 * (CaN_CaM / cell))) - (1) * (cell * (k1_7 * (CaM / cell) * (Ng / cell) - k2_7 * (CaM_Ng / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaMCa2" name="gained from reactions">
+                <Expression>(1) * (cell * (k1 * (_2Ca / cell) * (CaM / cell) - k2 * (CaMCa2 / cell))) - (1) * (cell * (k1_1 * (CaMCa2 / cell) * (_2Ca / cell) - k2_1 * (CaMCa4 / cell))) - (1) * (cell * (k1_3 * (CaN / cell) * (CaMCa2 / cell) - k2_3 * (CaN_CaMCa2 / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaMCa4" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_1 * (CaMCa2 / cell) * (_2Ca / cell) - k2_1 * (CaMCa4 / cell))) - (1) * (cell * (k1_4 * (CaN / cell) * (CaMCa4 / cell) - k2_4 * (CaN_CaMCa4 / cell))) - (1) * (cell * (k1_12 * (CaMKII / cell) * (CaMCa4 / cell) - k2_12 * (CaMKII_CaMCa4 / cell))) + (1) * (cell * (k1_14 * (CaMKIIp_CaMCa4 / cell) - k2_14 * (CaMKIIp / cell) * (CaMCa4 / cell))) - (1) * (cell * (k1_19 * (AC1 / cell) * (CaMCa4 / cell) - k2_19 * (AC1_CaMCa4 / cell))) - (1) * (cell * (k1_22 * (AC8 / cell) * (CaMCa4 / cell) - k2_22 * (AC8_CaMCa4 / cell))) - (1) * (cell * (k1_25 * (PDE1 / cell) * (CaMCa4 / cell) - k2_25 * (PDE1_CaMCa4 / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaN" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_2 * (CaN / cell) * (CaM / cell) - k2_2 * (CaN_CaM / cell))) - (1) * (cell * (k1_3 * (CaN / cell) * (CaMCa2 / cell) - k2_3 * (CaN_CaMCa2 / cell))) - (1) * (cell * (k1_4 * (CaN / cell) * (CaMCa4 / cell) - k2_4 * (CaN_CaMCa4 / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaN_CaM" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_2 * (CaN / cell) * (CaM / cell) - k2_2 * (CaN_CaM / cell))) - (1) * (cell * (k1_5 * (CaN_CaM / cell) * (_2Ca / cell) - k2_5 * (CaN_CaMCa2 / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaN_CaMCa2" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_3 * (CaN / cell) * (CaMCa2 / cell) - k2_3 * (CaN_CaMCa2 / cell))) + (1) * (cell * (k1_5 * (CaN_CaM / cell) * (_2Ca / cell) - k2_5 * (CaN_CaMCa2 / cell))) - (1) * (cell * (k1_6 * (CaN_CaMCa2 / cell) * (_2Ca / cell) - k2_6 * (CaN_CaMCa4 / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaN_CaMCa4" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_4 * (CaN / cell) * (CaMCa4 / cell) - k2_4 * (CaN_CaMCa4 / cell))) + (1) * (cell * (k1_6 * (CaN_CaMCa2 / cell) * (_2Ca / cell) - k2_6 * (CaN_CaMCa4 / cell))) - (1) * (cell * (k1_33 * (I1p / cell) * (CaN_CaMCa4 / cell) - k2_33 * (I1p_CaN_CaMCa4 / cell))) + (1) * (cell * k1_34 * (I1p_CaN_CaMCa4 / cell)) - (1) * (cell * (k1_36 * (PP1_I1p / cell) * (CaN_CaMCa4 / cell) - k2_36 * (PP1_I1_CaN_CaMCa4 / cell))) + (1) * (cell * k1_37 * (PP1_I1_CaN_CaMCa4 / cell)) - (1) * (cell * (k1_55 * (SSH1 / cell) * (CaN_CaMCa4 / cell) - k2_55 * (SSH1_CaN_CaMCa4 / cell))) + (1) * (cell * k1_56 * (SSH1_CaN_CaMCa4 / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="Ng" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_7 * (CaM / cell) * (Ng / cell) - k2_7 * (CaM_Ng / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaM_Ng" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_7 * (CaM / cell) * (Ng / cell) - k2_7 * (CaM_Ng / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaMKII" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_8 * (CaMKII / cell) * (F_actin_ATP / cell) - k2_8 * (CaMKII_F_actin_ATP / cell))) - (1) * (cell * (k1_9 * (CaMKII / cell) * (F_actin_ADP / cell) - k2_9 * (CaMKII_F_actin_ADP / cell))) - (1) * (cell * (k1_10 * (CaMKII / cell) * (G_actin_ATP / cell) - k2_10 * (CaMKII_G_actin_ADP / cell))) - (1) * (cell * (k1_11 * (CaMKII / cell) * (G_actin_ADP / cell) - k2_11 * (CaMKII_G_actin_ADP / cell))) - (1) * (cell * (k1_12 * (CaMKII / cell) * (CaMCa4 / cell) - k2_12 * (CaMKII_CaMCa4 / cell))) - (1) * (cell * (k1_15 * (CaMKII / cell) * (CaMKIIp / cell) - k2_15 * (CaMKII_CaMKIIp / cell))) + (1) * (cell * k1_18 * (CaMKIIp_PP1 / cell)) + (1) * (cell * k1_39 * (PP1_CaMKIIp / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="F_actin_ATP" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_8 * (CaMKII / cell) * (F_actin_ATP / cell) - k2_8 * (CaMKII_F_actin_ATP / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaMKII_F_actin_ATP" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_8 * (CaMKII / cell) * (F_actin_ATP / cell) - k2_8 * (CaMKII_F_actin_ATP / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="F_actin_ADP" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_9 * (CaMKII / cell) * (F_actin_ADP / cell) - k2_9 * (CaMKII_F_actin_ADP / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaMKII_F_actin_ADP" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_9 * (CaMKII / cell) * (F_actin_ADP / cell) - k2_9 * (CaMKII_F_actin_ADP / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="G_actin_ATP" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_10 * (CaMKII / cell) * (G_actin_ATP / cell) - k2_10 * (CaMKII_G_actin_ADP / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaMKII_G_actin_ADP" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_10 * (CaMKII / cell) * (G_actin_ATP / cell) - k2_10 * (CaMKII_G_actin_ADP / cell))) + (1) * (cell * (k1_11 * (CaMKII / cell) * (G_actin_ADP / cell) - k2_11 * (CaMKII_G_actin_ADP / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="G_actin_ADP" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_11 * (CaMKII / cell) * (G_actin_ADP / cell) - k2_11 * (CaMKII_G_actin_ADP / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaMKII_CaMCa4" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_12 * (CaMKII / cell) * (CaMCa4 / cell) - k2_12 * (CaMKII_CaMCa4 / cell))) - (1) * (cell * k1_13 * (CaMKII_CaMCa4 / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaMKIIp_CaMCa4" name="gained from reactions">
+                <Expression>(1) * (cell * k1_13 * (CaMKII_CaMCa4 / cell)) - (1) * (cell * (k1_14 * (CaMKIIp_CaMCa4 / cell) - k2_14 * (CaMKIIp / cell) * (CaMCa4 / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaMKIIp" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_14 * (CaMKIIp_CaMCa4 / cell) - k2_14 * (CaMKIIp / cell) * (CaMCa4 / cell))) - (1) * (cell * (k1_15 * (CaMKII / cell) * (CaMKIIp / cell) - k2_15 * (CaMKII_CaMKIIp / cell))) - (1) * (cell * (k1_17 * (CaMKIIp / cell) * (PP1 / cell) - k2_17 * (CaMKIIp_PP1 / cell))) - (1) * (cell * (k1_38 * (PP1 / cell) * (CaMKIIp / cell) - k2_38 * (PP1_CaMKIIp / cell))) - (1) * (cell * (k1_41 * (Cdc42GEF / cell) * (CaMKIIp / cell) - k2_41 * (Cdc42GEF_CaMKIIp / cell))) + (1) * (cell * k1_42 * (Cdc42GEF_CaMKIIp / cell)) - (1) * (cell * (k1_47 * (GAP / cell) * (CaMKIIp / cell) - k2_47 * (GAP_CaMKIIp / cell))) + (1) * (cell * k1_48 * (GAP_CaMKIIp / cell)) - (1) * (cell * (k1_57 * (SSH1_A / cell) * (CaMKIIp / cell) - k2_57 * (SSH1_A_CaMKIIp / cell))) + (1) * (cell * k1_58 * (SSH1_A_CaMKIIp / cell)) + (1) * (cell * k1_67 * (RhoGEF_CaMKIIp / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaMKII_CaMKIIp" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_15 * (CaMKII / cell) * (CaMKIIp / cell) - k2_15 * (CaMKII_CaMKIIp / cell))) - (1) * (cell * k1_16 * (CaMKII_CaMKIIp / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="_2CaMKIIp" name="gained from reactions">
+                <Expression>(1) * (cell * k1_16 * (CaMKII_CaMKIIp / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="PP1" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_17 * (CaMKIIp / cell) * (PP1 / cell) - k2_17 * (CaMKIIp_PP1 / cell))) + (1) * (cell * k1_18 * (CaMKIIp_PP1 / cell)) - (1) * (cell * (k1_35 * (PP1 / cell) * (I1p / cell) - k2_35 * (PP1_I1p / cell))) + (1) * (cell * k1_37 * (PP1_I1_CaN_CaMCa4 / cell)) - (1) * (cell * (k1_38 * (PP1 / cell) * (CaMKIIp / cell) - k2_38 * (PP1_CaMKIIp / cell))) + (1) * (cell * k1_39 * (PP1_CaMKIIp / cell)) - (1) * (cell * (k1_43 * (Cdc42GEF_A / cell) * (PP1 / cell) - k2_43 * (PP1_Cdc42GEF_A / cell))) + (1) * (cell * k1_44 * (PP1_Cdc42GEF_A / cell)) - (1) * (cell * (k1_51 * (GAP_A / cell) * (PP1 / cell) - k2_51 * (GAP_A_PP1 / cell))) + (1) * (cell * k1_52 * (GAP_A_PP1 / cell)) - (1) * (cell * (k1_68 * (RhoGEF_A / cell) * (PP1 / cell) - k2_68 * (RhoGEF_A_PP1 / cell))) + (1) * (cell * k1_69 * (RhoGEF_A_PP1 / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="CaMKIIp_PP1" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_17 * (CaMKIIp / cell) * (PP1 / cell) - k2_17 * (CaMKIIp_PP1 / cell))) - (1) * (cell * k1_18 * (CaMKIIp_PP1 / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="AC1" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_19 * (AC1 / cell) * (CaMCa4 / cell) - k2_19 * (AC1_CaMCa4 / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="AC1_CaMCa4" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_19 * (AC1 / cell) * (CaMCa4 / cell) - k2_19 * (AC1_CaMCa4 / cell))) - (1) * (cell * (k1_20 * (AC1_CaMCa4 / cell) * (ATP / cell) - k2_20 * (AC1_CaMCa4_ATP / cell))) + (1) * (cell * k1_21 * (AC1_CaMCa4_ATP / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="ATP" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_20 * (AC1_CaMCa4 / cell) * (ATP / cell) - k2_20 * (AC1_CaMCa4_ATP / cell))) - (1) * (cell * (k1_23 * (AC8_CaMCa4 / cell) * (ATP / cell) - k2_23 * (AC8_CaMCa4_ATP / cell))) + (1) * (cell * k1_40 * (AMP / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="AC1_CaMCa4_ATP" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_20 * (AC1_CaMCa4 / cell) * (ATP / cell) - k2_20 * (AC1_CaMCa4_ATP / cell))) - (1) * (cell * k1_21 * (AC1_CaMCa4_ATP / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="_cAMP" name="gained from reactions">
+                <Expression>(1) * (cell * k1_21 * (AC1_CaMCa4_ATP / cell)) + (1) * (cell * k1_24 * (AC8_CaMCa4_ATP / cell)) - (1) * (cell * (k1_26 * (PDE1_CaMCa4 / cell) * (_cAMP / cell) - k2_26 * (PDE1_CaMCa4__cAMP / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="AC8" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_22 * (AC8 / cell) * (CaMCa4 / cell) - k2_22 * (AC8_CaMCa4 / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="AC8_CaMCa4" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_22 * (AC8 / cell) * (CaMCa4 / cell) - k2_22 * (AC8_CaMCa4 / cell))) - (1) * (cell * (k1_23 * (AC8_CaMCa4 / cell) * (ATP / cell) - k2_23 * (AC8_CaMCa4_ATP / cell))) + (1) * (cell * k1_24 * (AC8_CaMCa4_ATP / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="AC8_CaMCa4_ATP" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_23 * (AC8_CaMCa4 / cell) * (ATP / cell) - k2_23 * (AC8_CaMCa4_ATP / cell))) - (1) * (cell * k1_24 * (AC8_CaMCa4_ATP / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="PDE1" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_25 * (PDE1 / cell) * (CaMCa4 / cell) - k2_25 * (PDE1_CaMCa4 / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="PDE1_CaMCa4" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_25 * (PDE1 / cell) * (CaMCa4 / cell) - k2_25 * (PDE1_CaMCa4 / cell))) - (1) * (cell * (k1_26 * (PDE1_CaMCa4 / cell) * (_cAMP / cell) - k2_26 * (PDE1_CaMCa4__cAMP / cell))) + (1) * (cell * k1_27 * (PDE1_CaMCa4_cAMP / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="PDE1_CaMCa4__cAMP" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_26 * (PDE1_CaMCa4 / cell) * (_cAMP / cell) - k2_26 * (PDE1_CaMCa4__cAMP / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="PDE1_CaMCa4_cAMP" name="gained from reactions">
+                <Expression>- (1) * (cell * k1_27 * (PDE1_CaMCa4_cAMP / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="AMP" name="gained from reactions">
+                <Expression>(1) * (cell * k1_27 * (PDE1_CaMCa4_cAMP / cell)) - (1) * (cell * k1_40 * (AMP / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="PKA" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_28 * (PKA / cell) * (_2_cAMP / cell) - k2_28 * (PKA__cAMP_2 / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="_2_cAMP" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_28 * (PKA / cell) * (_2_cAMP / cell) - k2_28 * (PKA__cAMP_2 / cell))) - (1) * (cell * (k1_29 * (PKA__cAMP_2 / cell) * (_2_cAMP / cell) - k2_29 * (PKA__cAMP_4 / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="PKA__cAMP_2" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_28 * (PKA / cell) * (_2_cAMP / cell) - k2_28 * (PKA__cAMP_2 / cell))) - (1) * (cell * (k1_29 * (PKA__cAMP_2 / cell) * (_2_cAMP / cell) - k2_29 * (PKA__cAMP_4 / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="PKA__cAMP_4" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_29 * (PKA__cAMP_2 / cell) * (_2_cAMP / cell) - k2_29 * (PKA__cAMP_4 / cell))) - (1) * (cell * (k1_30 * (PKA__cAMP_4 / cell) - k2_30 * (PKAr / cell) * (_2PKAc / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="PKAr" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_30 * (PKA__cAMP_4 / cell) - k2_30 * (PKAr / cell) * (_2PKAc / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="_2PKAc" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_30 * (PKA__cAMP_4 / cell) - k2_30 * (PKAr / cell) * (_2PKAc / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="I1" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_31 * (I1 / cell) * (PKAc / cell) - k2_31 * (I1PKAc / cell))) + (1) * (cell * k1_34 * (I1p_CaN_CaMCa4 / cell)) + (1) * (cell * k1_37 * (PP1_I1_CaN_CaMCa4 / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="PKAc" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_31 * (I1 / cell) * (PKAc / cell) - k2_31 * (I1PKAc / cell))) + (1) * (cell * k1_32 * (I1PKAc / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="I1PKAc" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_31 * (I1 / cell) * (PKAc / cell) - k2_31 * (I1PKAc / cell))) - (1) * (cell * k1_32 * (I1PKAc / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="I1p" name="gained from reactions">
+                <Expression>(1) * (cell * k1_32 * (I1PKAc / cell)) - (1) * (cell * (k1_33 * (I1p / cell) * (CaN_CaMCa4 / cell) - k2_33 * (I1p_CaN_CaMCa4 / cell))) - (1) * (cell * (k1_35 * (PP1 / cell) * (I1p / cell) - k2_35 * (PP1_I1p / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="I1p_CaN_CaMCa4" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_33 * (I1p / cell) * (CaN_CaMCa4 / cell) - k2_33 * (I1p_CaN_CaMCa4 / cell))) - (1) * (cell * k1_34 * (I1p_CaN_CaMCa4 / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="PP1_I1p" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_35 * (PP1 / cell) * (I1p / cell) - k2_35 * (PP1_I1p / cell))) - (1) * (cell * (k1_36 * (PP1_I1p / cell) * (CaN_CaMCa4 / cell) - k2_36 * (PP1_I1_CaN_CaMCa4 / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="PP1_I1_CaN_CaMCa4" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_36 * (PP1_I1p / cell) * (CaN_CaMCa4 / cell) - k2_36 * (PP1_I1_CaN_CaMCa4 / cell))) - (1) * (cell * k1_37 * (PP1_I1_CaN_CaMCa4 / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="PP1_CaMKIIp" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_38 * (PP1 / cell) * (CaMKIIp / cell) - k2_38 * (PP1_CaMKIIp / cell))) - (1) * (cell * k1_39 * (PP1_CaMKIIp / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="Cdc42GEF" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_41 * (Cdc42GEF / cell) * (CaMKIIp / cell) - k2_41 * (Cdc42GEF_CaMKIIp / cell))) + (1) * (cell * k1_44 * (PP1_Cdc42GEF_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="Cdc42GEF_CaMKIIp" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_41 * (Cdc42GEF / cell) * (CaMKIIp / cell) - k2_41 * (Cdc42GEF_CaMKIIp / cell))) - (1) * (cell * k1_42 * (Cdc42GEF_CaMKIIp / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="Cdc42GEF_A" name="gained from reactions">
+                <Expression>(1) * (cell * k1_42 * (Cdc42GEF_CaMKIIp / cell)) - (1) * (cell * (k1_43 * (Cdc42GEF_A / cell) * (PP1 / cell) - k2_43 * (PP1_Cdc42GEF_A / cell))) - (1) * (cell * (k1_45 * (Cdc42GDP / cell) * (Cdc42GEF_A / cell) - k2_45 * (Cdc42GDP_Cdc42GEF_A / cell))) + (1) * (cell * k1_46 * (Cdc42GDP_Cdc42GEF_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="PP1_Cdc42GEF_A" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_43 * (Cdc42GEF_A / cell) * (PP1 / cell) - k2_43 * (PP1_Cdc42GEF_A / cell))) - (1) * (cell * k1_44 * (PP1_Cdc42GEF_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="Cdc42GDP" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_45 * (Cdc42GDP / cell) * (Cdc42GEF_A / cell) - k2_45 * (Cdc42GDP_Cdc42GEF_A / cell))) + (1) * (cell * k1_50 * (Cdc42GTP_GAP_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="Cdc42GDP_Cdc42GEF_A" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_45 * (Cdc42GDP / cell) * (Cdc42GEF_A / cell) - k2_45 * (Cdc42GDP_Cdc42GEF_A / cell))) - (1) * (cell * k1_46 * (Cdc42GDP_Cdc42GEF_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="Cdc42GTP" name="gained from reactions">
+                <Expression>(1) * (cell * k1_46 * (Cdc42GDP_Cdc42GEF_A / cell)) - (1) * (cell * (k1_49 * (Cdc42GTP / cell) * (GAP_A / cell) - k2_49 * (Cdc42GTP_GAP_A / cell))) - (1) * (cell * (k1_53 * (Cdc42GTP / cell) * (WASP / cell) - k2_53 * (Cdc42GTP_WASP / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="GAP" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_47 * (GAP / cell) * (CaMKIIp / cell) - k2_47 * (GAP_CaMKIIp / cell))) + (1) * (cell * k1_52 * (GAP_A_PP1 / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="GAP_CaMKIIp" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_47 * (GAP / cell) * (CaMKIIp / cell) - k2_47 * (GAP_CaMKIIp / cell))) - (1) * (cell * k1_48 * (GAP_CaMKIIp / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="GAP_A" name="gained from reactions">
+                <Expression>(1) * (cell * k1_48 * (GAP_CaMKIIp / cell)) - (1) * (cell * (k1_49 * (Cdc42GTP / cell) * (GAP_A / cell) - k2_49 * (Cdc42GTP_GAP_A / cell))) + (1) * (cell * k1_50 * (Cdc42GTP_GAP_A / cell)) - (1) * (cell * (k1_51 * (GAP_A / cell) * (PP1 / cell) - k2_51 * (GAP_A_PP1 / cell))) - (1) * (cell * (k1_72 * (RhoGTP / cell) * (GAP_A / cell) - k2_72 * (RhoGTP_GAP_A / cell))) + (1) * (cell * k1_73 * (RhoGTP_GAP_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="Cdc42GTP_GAP_A" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_49 * (Cdc42GTP / cell) * (GAP_A / cell) - k2_49 * (Cdc42GTP_GAP_A / cell))) - (1) * (cell * k1_50 * (Cdc42GTP_GAP_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="GAP_A_PP1" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_51 * (GAP_A / cell) * (PP1 / cell) - k2_51 * (GAP_A_PP1 / cell))) - (1) * (cell * k1_52 * (GAP_A_PP1 / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="WASP" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_53 * (Cdc42GTP / cell) * (WASP / cell) - k2_53 * (Cdc42GTP_WASP / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="Cdc42GTP_WASP" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_53 * (Cdc42GTP / cell) * (WASP / cell) - k2_53 * (Cdc42GTP_WASP / cell))) - (1) * (cell * (k1_54 * (Arp2_3 / cell) * (Cdc42GTP_WASP / cell) - k2_54 * (Arp2_3_A / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="Arp2_3" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_54 * (Arp2_3 / cell) * (Cdc42GTP_WASP / cell) - k2_54 * (Arp2_3_A / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="Arp2_3_A" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_54 * (Arp2_3 / cell) * (Cdc42GTP_WASP / cell) - k2_54 * (Arp2_3_A / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="SSH1" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_55 * (SSH1 / cell) * (CaN_CaMCa4 / cell) - k2_55 * (SSH1_CaN_CaMCa4 / cell))) + (1) * (cell * k1_58 * (SSH1_A_CaMKIIp / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="SSH1_CaN_CaMCa4" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_55 * (SSH1 / cell) * (CaN_CaMCa4 / cell) - k2_55 * (SSH1_CaN_CaMCa4 / cell))) - (1) * (cell * k1_56 * (SSH1_CaN_CaMCa4 / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="SSH1_A" name="gained from reactions">
+                <Expression>(1) * (cell * k1_56 * (SSH1_CaN_CaMCa4 / cell)) - (1) * (cell * (k1_57 * (SSH1_A / cell) * (CaMKIIp / cell) - k2_57 * (SSH1_A_CaMKIIp / cell))) - (1) * (cell * (k1_61 * (LIMK_A / cell) * (SSH1_A / cell) - k2_61 * (LIMK_A_SSH1_A / cell))) + (1) * (cell * k1_62 * (LIMK_A_SSH1_A / cell)) - (1) * (cell * (k1_63 * (Cofilin / cell) * (SSH1_A / cell) - k2_63 * (Cofilin_SSH1_A / cell))) + (1) * (cell * k1_64 * (Cofilin_SSH1_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="SSH1_A_CaMKIIp" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_57 * (SSH1_A / cell) * (CaMKIIp / cell) - k2_57 * (SSH1_A_CaMKIIp / cell))) - (1) * (cell * k1_58 * (SSH1_A_CaMKIIp / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="LIMK" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_59 * (LIMK / cell) * (ROCK_A / cell) - k2_59 * (LIMK_ROCK_A / cell))) + (1) * (cell * k1_62 * (LIMK_A_SSH1_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="ROCK_A" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_59 * (LIMK / cell) * (ROCK_A / cell) - k2_59 * (LIMK_ROCK_A / cell))) + (1) * (cell * k1_60 * (LIMK_ROCK_A / cell)) + (1) * (cell * (k1_74 * (RhoGTP / cell) * (ROCK / cell) - k2_74 * (ROCK_A / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="LIMK_ROCK_A" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_59 * (LIMK / cell) * (ROCK_A / cell) - k2_59 * (LIMK_ROCK_A / cell))) - (1) * (cell * k1_60 * (LIMK_ROCK_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="LIMK_A" name="gained from reactions">
+                <Expression>(1) * (cell * k1_60 * (LIMK_ROCK_A / cell)) - (1) * (cell * (k1_61 * (LIMK_A / cell) * (SSH1_A / cell) - k2_61 * (LIMK_A_SSH1_A / cell))) - (1) * (cell * (k1_65 * (Cofilin_A / cell) * (LIMK_A / cell) - k2_65 * (Cofilin_A_LIMK_A / cell))) + (1) * (cell * k1_66 * (Cofilin_A_LIMK_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="LIMK_A_SSH1_A" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_61 * (LIMK_A / cell) * (SSH1_A / cell) - k2_61 * (LIMK_A_SSH1_A / cell))) - (1) * (cell * k1_62 * (LIMK_A_SSH1_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="Cofilin" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_63 * (Cofilin / cell) * (SSH1_A / cell) - k2_63 * (Cofilin_SSH1_A / cell))) + (1) * (cell * k1_66 * (Cofilin_A_LIMK_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="Cofilin_SSH1_A" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_63 * (Cofilin / cell) * (SSH1_A / cell) - k2_63 * (Cofilin_SSH1_A / cell))) - (1) * (cell * k1_64 * (Cofilin_SSH1_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="Cofilin_A" name="gained from reactions">
+                <Expression>(1) * (cell * k1_64 * (Cofilin_SSH1_A / cell)) - (1) * (cell * (k1_65 * (Cofilin_A / cell) * (LIMK_A / cell) - k2_65 * (Cofilin_A_LIMK_A / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="Cofilin_A_LIMK_A" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_65 * (Cofilin_A / cell) * (LIMK_A / cell) - k2_65 * (Cofilin_A_LIMK_A / cell))) - (1) * (cell * k1_66 * (Cofilin_A_LIMK_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="RhoGEF_CaMKIIp" name="gained from reactions">
+                <Expression>- (1) * (cell * k1_67 * (RhoGEF_CaMKIIp / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="RhoGEF_A" name="gained from reactions">
+                <Expression>(1) * (cell * k1_67 * (RhoGEF_CaMKIIp / cell)) - (1) * (cell * (k1_68 * (RhoGEF_A / cell) * (PP1 / cell) - k2_68 * (RhoGEF_A_PP1 / cell))) - (1) * (cell * (k1_70 * (RhoGDP / cell) * (RhoGEF_A / cell) - k2_70 * (RhoGDP_RhoGEF_A / cell))) + (1) * (cell * k1_71 * (RhoGDP_RhoGEF_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="RhoGEF_A_PP1" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_68 * (RhoGEF_A / cell) * (PP1 / cell) - k2_68 * (RhoGEF_A_PP1 / cell))) - (1) * (cell * k1_69 * (RhoGEF_A_PP1 / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="RhoGEF" name="gained from reactions">
+                <Expression>(1) * (cell * k1_69 * (RhoGEF_A_PP1 / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="RhoGDP" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_70 * (RhoGDP / cell) * (RhoGEF_A / cell) - k2_70 * (RhoGDP_RhoGEF_A / cell))) + (1) * (cell * k1_73 * (RhoGTP_GAP_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="RhoGDP_RhoGEF_A" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_70 * (RhoGDP / cell) * (RhoGEF_A / cell) - k2_70 * (RhoGDP_RhoGEF_A / cell))) - (1) * (cell * k1_71 * (RhoGDP_RhoGEF_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="RhoGTP" name="gained from reactions">
+                <Expression>(1) * (cell * k1_71 * (RhoGDP_RhoGEF_A / cell)) - (1) * (cell * (k1_72 * (RhoGTP / cell) * (GAP_A / cell) - k2_72 * (RhoGTP_GAP_A / cell))) - (1) * (cell * (k1_74 * (RhoGTP / cell) * (ROCK / cell) - k2_74 * (ROCK_A / cell)))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="RhoGTP_GAP_A" name="gained from reactions">
+                <Expression>(1) * (cell * (k1_72 * (RhoGTP / cell) * (GAP_A / cell) - k2_72 * (RhoGTP_GAP_A / cell))) - (1) * (cell * k1_73 * (RhoGTP_GAP_A / cell))</Expression>
+            </DiffEqn>
+            <DiffEqn symbol-ref="ROCK" name="gained from reactions">
+                <Expression>- (1) * (cell * (k1_74 * (RhoGTP / cell) * (ROCK / cell) - k2_74 * (ROCK_A / cell)))</Expression>
+            </DiffEqn>
+            <Constant symbol="f" value="0.0"/>
+            <Constant symbol="t" value="0.0"/>
+        </System>
+        <Constant symbol="cell" value="1"/>
+        <Variable symbol="_2Ca" value="1*cell" name="2Ca"/>
+        <Function symbol="c_2Ca" name="_2Ca">
+            <Expression>_2Ca/cell</Expression>
+        </Function>
+        <Variable symbol="CaM" value="10*cell" name="CaM"/>
+        <Function symbol="cCaM" name="CaM">
+            <Expression>CaM/cell</Expression>
+        </Function>
+        <Variable symbol="CaMCa2" value="0*cell" name="CaMCa2"/>
+        <Function symbol="cCaMCa2" name="CaMCa2">
+            <Expression>CaMCa2/cell</Expression>
+        </Function>
+        <Variable symbol="CaN" value="1*cell" name="CaN"/>
+        <Function symbol="cCaN" name="CaN">
+            <Expression>CaN/cell</Expression>
+        </Function>
+        <Variable symbol="CaN_CaM" value="0*cell" name="CaN-CaM"/>
+        <Function symbol="cCaN_CaM" name="CaN_CaM">
+            <Expression>CaN_CaM/cell</Expression>
+        </Function>
+        <Variable symbol="CaMCa4" value="0*cell" name="CaMCa4"/>
+        <Function symbol="cCaMCa4" name="CaMCa4">
+            <Expression>CaMCa4/cell</Expression>
+        </Function>
+        <Variable symbol="CaN_CaMCa4" value="0*cell" name="CaN-CaMCa4"/>
+        <Function symbol="cCaN_CaMCa4" name="CaN_CaMCa4">
+            <Expression>CaN_CaMCa4/cell</Expression>
+        </Function>
+        <Variable symbol="CaN_CaMCa2" value="0*cell" name="CaN-CaMCa2"/>
+        <Function symbol="cCaN_CaMCa2" name="CaN_CaMCa2">
+            <Expression>CaN_CaMCa2/cell</Expression>
+        </Function>
+        <Variable symbol="CaM_Ng" value="0*cell" name="CaM-Ng"/>
+        <Function symbol="cCaM_Ng" name="CaM_Ng">
+            <Expression>CaM_Ng/cell</Expression>
+        </Function>
+        <Variable symbol="Ng" value="20*cell" name="Ng"/>
+        <Function symbol="cNg" name="Ng">
+            <Expression>Ng/cell</Expression>
+        </Function>
+        <Variable symbol="CaMKII" value="0*cell" name="CaMKII"/>
+        <Function symbol="cCaMKII" name="CaMKII">
+            <Expression>CaMKII/cell</Expression>
+        </Function>
+        <Variable symbol="CaMKII_F_actin_ATP" value="10*cell" name="CaMKII-F-actin-ATP"/>
+        <Function symbol="cCaMKII_F_actin_ATP" name="CaMKII_F_actin_ATP">
+            <Expression>CaMKII_F_actin_ATP/cell</Expression>
+        </Function>
+        <Variable symbol="F_actin_ATP" value="0*cell" name="F-actin-ATP"/>
+        <Function symbol="cF_actin_ATP" name="F_actin_ATP">
+            <Expression>F_actin_ATP/cell</Expression>
+        </Function>
+        <Variable symbol="CaMKII_F_actin_ADP" value="0*cell" name="CaMKII-F-actin-ADP"/>
+        <Function symbol="cCaMKII_F_actin_ADP" name="CaMKII_F_actin_ADP">
+            <Expression>CaMKII_F_actin_ADP/cell</Expression>
+        </Function>
+        <Variable symbol="F_actin_ADP" value="0*cell" name="F-actin-ADP"/>
+        <Function symbol="cF_actin_ADP" name="F_actin_ADP">
+            <Expression>F_actin_ADP/cell</Expression>
+        </Function>
+        <Variable symbol="G_actin_ATP" value="0*cell" name="G-actin-ATP"/>
+        <Function symbol="cG_actin_ATP" name="G_actin_ATP">
+            <Expression>G_actin_ATP/cell</Expression>
+        </Function>
+        <Variable symbol="CaMKII_CaMCa4" value="0*cell" name="CaMKII-CaMCa4"/>
+        <Function symbol="cCaMKII_CaMCa4" name="CaMKII_CaMCa4">
+            <Expression>CaMKII_CaMCa4/cell</Expression>
+        </Function>
+        <Variable symbol="CaMKIIp_CaMCa4" value="0*cell" name="CaMKIIp-CaMCa4"/>
+        <Function symbol="cCaMKIIp_CaMCa4" name="CaMKIIp_CaMCa4">
+            <Expression>CaMKIIp_CaMCa4/cell</Expression>
+        </Function>
+        <Variable symbol="CaMKIIp" value="0*cell" name="CaMKIIp"/>
+        <Function symbol="cCaMKIIp" name="CaMKIIp">
+            <Expression>CaMKIIp/cell</Expression>
+        </Function>
+        <Variable symbol="CaMKII_CaMKIIp" value="0*cell" name="CaMKII-CaMKIIp"/>
+        <Function symbol="cCaMKII_CaMKIIp" name="CaMKII_CaMKIIp">
+            <Expression>CaMKII_CaMKIIp/cell</Expression>
+        </Function>
+        <Variable symbol="_2CaMKIIp" value="0*cell" name="2CaMKIIp"/>
+        <Function symbol="c_2CaMKIIp" name="_2CaMKIIp">
+            <Expression>_2CaMKIIp/cell</Expression>
+        </Function>
+        <Variable symbol="CaMKIIp_PP1" value="0*cell" name="CaMKIIp-PP1"/>
+        <Function symbol="cCaMKIIp_PP1" name="CaMKIIp_PP1">
+            <Expression>CaMKIIp_PP1/cell</Expression>
+        </Function>
+        <Variable symbol="PP1" value="0.27*cell" name="PP1"/>
+        <Function symbol="cPP1" name="PP1">
+            <Expression>PP1/cell</Expression>
+        </Function>
+        <Variable symbol="AC1" value="0*cell" name="AC1"/>
+        <Function symbol="cAC1" name="AC1">
+            <Expression>AC1/cell</Expression>
+        </Function>
+        <Variable symbol="AC1_CaMCa4" value="0*cell" name="AC1-CaMCa4"/>
+        <Function symbol="cAC1_CaMCa4" name="AC1_CaMCa4">
+            <Expression>AC1_CaMCa4/cell</Expression>
+        </Function>
+        <Variable symbol="AC1_CaMCa4_ATP" value="0*cell" name="AC1-CaMCa4-ATP"/>
+        <Function symbol="cAC1_CaMCa4_ATP" name="AC1_CaMCa4_ATP">
+            <Expression>AC1_CaMCa4_ATP/cell</Expression>
+        </Function>
+        <Variable symbol="ATP" value="0*cell" name="ATP"/>
+        <Function symbol="cATP" name="ATP">
+            <Expression>ATP/cell</Expression>
+        </Function>
+        <Variable symbol="AC8" value="0*cell" name="AC8"/>
+        <Function symbol="cAC8" name="AC8">
+            <Expression>AC8/cell</Expression>
+        </Function>
+        <Variable symbol="AC8_CaMCa4" value="0*cell" name="AC8-CaMCa4"/>
+        <Function symbol="cAC8_CaMCa4" name="AC8_CaMCa4">
+            <Expression>AC8_CaMCa4/cell</Expression>
+        </Function>
+        <Variable symbol="AC8_CaMCa4_ATP" value="0*cell" name="AC8-CaMCa4-ATP"/>
+        <Function symbol="cAC8_CaMCa4_ATP" name="AC8_CaMCa4_ATP">
+            <Expression>AC8_CaMCa4_ATP/cell</Expression>
+        </Function>
+        <Variable symbol="PDE1" value="0*cell" name="PDE1"/>
+        <Function symbol="cPDE1" name="PDE1">
+            <Expression>PDE1/cell</Expression>
+        </Function>
+        <Variable symbol="PDE1_CaMCa4" value="0*cell" name="PDE1-CaMCa4"/>
+        <Function symbol="cPDE1_CaMCa4" name="PDE1_CaMCa4">
+            <Expression>PDE1_CaMCa4/cell</Expression>
+        </Function>
+        <Variable symbol="PDE1_CaMCa4_cAMP" value="0*cell" name="PDE1-CaMCa4-cAMP"/>
+        <Function symbol="cPDE1_CaMCa4_cAMP" name="PDE1_CaMCa4_cAMP">
+            <Expression>PDE1_CaMCa4_cAMP/cell</Expression>
+        </Function>
+        <Variable symbol="AMP" value="0*cell" name="AMP"/>
+        <Function symbol="cAMP" name="AMP">
+            <Expression>AMP/cell</Expression>
+        </Function>
+        <Variable symbol="PKA" value="0*cell" name="PKA"/>
+        <Function symbol="cPKA" name="PKA">
+            <Expression>PKA/cell</Expression>
+        </Function>
+        <Variable symbol="_2PKAc" value="0*cell" name="2PKAc"/>
+        <Function symbol="c_2PKAc" name="_2PKAc">
+            <Expression>_2PKAc/cell</Expression>
+        </Function>
+        <Variable symbol="PKAr" value="0*cell" name="PKAr"/>
+        <Function symbol="cPKAr" name="PKAr">
+            <Expression>PKAr/cell</Expression>
+        </Function>
+        <Variable symbol="I1" value="1.8*cell" name="I1"/>
+        <Function symbol="cI1" name="I1">
+            <Expression>I1/cell</Expression>
+        </Function>
+        <Variable symbol="I1PKAc" value="0*cell" name="I1PKAc"/>
+        <Function symbol="cI1PKAc" name="I1PKAc">
+            <Expression>I1PKAc/cell</Expression>
+        </Function>
+        <Variable symbol="PKAc" value="0*cell" name="PKAc"/>
+        <Function symbol="cPKAc" name="PKAc">
+            <Expression>PKAc/cell</Expression>
+        </Function>
+        <Variable symbol="I1p" value="0*cell" name="I1p"/>
+        <Function symbol="cI1p" name="I1p">
+            <Expression>I1p/cell</Expression>
+        </Function>
+        <Variable symbol="I1p_CaN_CaMCa4" value="0*cell" name="I1p-CaN-CaMCa4"/>
+        <Function symbol="cI1p_CaN_CaMCa4" name="I1p_CaN_CaMCa4">
+            <Expression>I1p_CaN_CaMCa4/cell</Expression>
+        </Function>
+        <Variable symbol="PP1_I1p" value="0*cell" name="PP1-I1p"/>
+        <Function symbol="cPP1_I1p" name="PP1_I1p">
+            <Expression>PP1_I1p/cell</Expression>
+        </Function>
+        <Variable symbol="PP1_I1_CaN_CaMCa4" value="0*cell" name="PP1-I1-CaN-CaMCa4"/>
+        <Function symbol="cPP1_I1_CaN_CaMCa4" name="PP1_I1_CaN_CaMCa4">
+            <Expression>PP1_I1_CaN_CaMCa4/cell</Expression>
+        </Function>
+        <Variable symbol="PP1_CaMKIIp" value="0*cell" name="PP1-CaMKIIp"/>
+        <Function symbol="cPP1_CaMKIIp" name="PP1_CaMKIIp">
+            <Expression>PP1_CaMKIIp/cell</Expression>
+        </Function>
+        <Variable symbol="Cdc42GEF" value="0.1*cell" name="Cdc42GEF"/>
+        <Function symbol="cCdc42GEF" name="Cdc42GEF">
+            <Expression>Cdc42GEF/cell</Expression>
+        </Function>
+        <Variable symbol="Cdc42GEF_CaMKIIp" value="0*cell" name="Cdc42GEF-CaMKIIp"/>
+        <Function symbol="cCdc42GEF_CaMKIIp" name="Cdc42GEF_CaMKIIp">
+            <Expression>Cdc42GEF_CaMKIIp/cell</Expression>
+        </Function>
+        <Variable symbol="Cdc42GEF_A" value="1*cell" name="Cdc42GEF_A"/>
+        <Function symbol="cCdc42GEF_A" name="Cdc42GEF_A">
+            <Expression>Cdc42GEF_A/cell</Expression>
+        </Function>
+        <Variable symbol="PP1_Cdc42GEF_A" value="0*cell" name="PP1-Cdc42GEF_A"/>
+        <Function symbol="cPP1_Cdc42GEF_A" name="PP1_Cdc42GEF_A">
+            <Expression>PP1_Cdc42GEF_A/cell</Expression>
+        </Function>
+        <Variable symbol="Cdc42GDP" value="1*cell" name="Cdc42GDP"/>
+        <Function symbol="cCdc42GDP" name="Cdc42GDP">
+            <Expression>Cdc42GDP/cell</Expression>
+        </Function>
+        <Variable symbol="Cdc42GDP_Cdc42GEF_A" value="0*cell" name="Cdc42GDP-Cdc42GEF_A"/>
+        <Function symbol="cCdc42GDP_Cdc42GEF_A" name="Cdc42GDP_Cdc42GEF_A">
+            <Expression>Cdc42GDP_Cdc42GEF_A/cell</Expression>
+        </Function>
+        <Variable symbol="Cdc42GTP" value="0*cell" name="Cdc42GTP"/>
+        <Function symbol="cCdc42GTP" name="Cdc42GTP">
+            <Expression>Cdc42GTP/cell</Expression>
+        </Function>
+        <Variable symbol="GAP" value="0*cell" name="GAP"/>
+        <Function symbol="cGAP" name="GAP">
+            <Expression>GAP/cell</Expression>
+        </Function>
+        <Variable symbol="GAP_CaMKIIp" value="0*cell" name="GAP-CaMKIIp"/>
+        <Function symbol="cGAP_CaMKIIp" name="GAP_CaMKIIp">
+            <Expression>GAP_CaMKIIp/cell</Expression>
+        </Function>
+        <Variable symbol="GAP_A" value="0*cell" name="GAP_A"/>
+        <Function symbol="cGAP_A" name="GAP_A">
+            <Expression>GAP_A/cell</Expression>
+        </Function>
+        <Variable symbol="Cdc42GTP_GAP_A" value="0*cell" name="Cdc42GTP-GAP_A"/>
+        <Function symbol="cCdc42GTP_GAP_A" name="Cdc42GTP_GAP_A">
+            <Expression>Cdc42GTP_GAP_A/cell</Expression>
+        </Function>
+        <Variable symbol="GAP_A_PP1" value="0*cell" name="GAP_A-PP1"/>
+        <Function symbol="cGAP_A_PP1" name="GAP_A_PP1">
+            <Expression>GAP_A_PP1/cell</Expression>
+        </Function>
+        <Variable symbol="Cdc42GTP_WASP" value="0*cell" name="Cdc42GTP-WASP"/>
+        <Function symbol="cCdc42GTP_WASP" name="Cdc42GTP_WASP">
+            <Expression>Cdc42GTP_WASP/cell</Expression>
+        </Function>
+        <Variable symbol="WASP" value="1*cell" name="WASP"/>
+        <Function symbol="cWASP" name="WASP">
+            <Expression>WASP/cell</Expression>
+        </Function>
+        <Variable symbol="Arp2_3" value="1*cell" name="Arp2/3"/>
+        <Function symbol="cArp2_3" name="Arp2_3">
+            <Expression>Arp2_3/cell</Expression>
+        </Function>
+        <Variable symbol="Arp2_3_A" value="0*cell" name="Arp2/3_A"/>
+        <Function symbol="cArp2_3_A" name="Arp2_3_A">
+            <Expression>Arp2_3_A/cell</Expression>
+        </Function>
+        <Variable symbol="SSH1" value="2*cell" name="SSH1"/>
+        <Function symbol="cSSH1" name="SSH1">
+            <Expression>SSH1/cell</Expression>
+        </Function>
+        <Variable symbol="SSH1_CaN_CaMCa4" value="0*cell" name="SSH1-CaN-CaMCa4"/>
+        <Function symbol="cSSH1_CaN_CaMCa4" name="SSH1_CaN_CaMCa4">
+            <Expression>SSH1_CaN_CaMCa4/cell</Expression>
+        </Function>
+        <Variable symbol="SSH1_A" value="0*cell" name="SSH1_A"/>
+        <Function symbol="cSSH1_A" name="SSH1_A">
+            <Expression>SSH1_A/cell</Expression>
+        </Function>
+        <Variable symbol="SSH1_A_CaMKIIp" value="0*cell" name="SSH1_A-CaMKIIp"/>
+        <Function symbol="cSSH1_A_CaMKIIp" name="SSH1_A_CaMKIIp">
+            <Expression>SSH1_A_CaMKIIp/cell</Expression>
+        </Function>
+        <Variable symbol="LIMK" value="2*cell" name="LIMK"/>
+        <Function symbol="cLIMK" name="LIMK">
+            <Expression>LIMK/cell</Expression>
+        </Function>
+        <Variable symbol="LIMK_ROCK_A" value="0*cell" name="LIMK-ROCK_A"/>
+        <Function symbol="cLIMK_ROCK_A" name="LIMK_ROCK_A">
+            <Expression>LIMK_ROCK_A/cell</Expression>
+        </Function>
+        <Variable symbol="ROCK_A" value="0*cell" name="ROCK_A"/>
+        <Function symbol="cROCK_A" name="ROCK_A">
+            <Expression>ROCK_A/cell</Expression>
+        </Function>
+        <Variable symbol="LIMK_A" value="0*cell" name="LIMK_A"/>
+        <Function symbol="cLIMK_A" name="LIMK_A">
+            <Expression>LIMK_A/cell</Expression>
+        </Function>
+        <Variable symbol="LIMK_A_SSH1_A" value="0*cell" name="LIMK_A-SSH1_A"/>
+        <Function symbol="cLIMK_A_SSH1_A" name="LIMK_A_SSH1_A">
+            <Expression>LIMK_A_SSH1_A/cell</Expression>
+        </Function>
+        <Variable symbol="Cofilin" value="2*cell" name="Cofilin"/>
+        <Function symbol="cCofilin" name="Cofilin">
+            <Expression>Cofilin/cell</Expression>
+        </Function>
+        <Variable symbol="Cofilin_SSH1_A" value="0*cell" name="Cofilin-SSH1_A"/>
+        <Function symbol="cCofilin_SSH1_A" name="Cofilin_SSH1_A">
+            <Expression>Cofilin_SSH1_A/cell</Expression>
+        </Function>
+        <Variable symbol="Cofilin_A" value="0*cell" name="Cofilin_A"/>
+        <Function symbol="cCofilin_A" name="Cofilin_A">
+            <Expression>Cofilin_A/cell</Expression>
+        </Function>
+        <Variable symbol="Cofilin_A_LIMK_A" value="0*cell" name="Cofilin_A-LIMK_A"/>
+        <Function symbol="cCofilin_A_LIMK_A" name="Cofilin_A_LIMK_A">
+            <Expression>Cofilin_A_LIMK_A/cell</Expression>
+        </Function>
+        <Variable symbol="RhoGEF_CaMKIIp" value="0*cell" name="RhoGEF-CaMKIIp"/>
+        <Function symbol="cRhoGEF_CaMKIIp" name="RhoGEF_CaMKIIp">
+            <Expression>RhoGEF_CaMKIIp/cell</Expression>
+        </Function>
+        <Variable symbol="RhoGEF_A" value="0*cell" name="RhoGEF_A"/>
+        <Function symbol="cRhoGEF_A" name="RhoGEF_A">
+            <Expression>RhoGEF_A/cell</Expression>
+        </Function>
+        <Variable symbol="RhoGEF_A_PP1" value="0*cell" name="RhoGEF_A-PP1"/>
+        <Function symbol="cRhoGEF_A_PP1" name="RhoGEF_A_PP1">
+            <Expression>RhoGEF_A_PP1/cell</Expression>
+        </Function>
+        <Variable symbol="RhoGEF" value="0.1*cell" name="RhoGEF"/>
+        <Function symbol="cRhoGEF" name="RhoGEF">
+            <Expression>RhoGEF/cell</Expression>
+        </Function>
+        <Variable symbol="RhoGDP" value="1*cell" name="RhoGDP"/>
+        <Function symbol="cRhoGDP" name="RhoGDP">
+            <Expression>RhoGDP/cell</Expression>
+        </Function>
+        <Variable symbol="RhoGDP_RhoGEF_A" value="0*cell" name="RhoGDP-RhoGEF_A"/>
+        <Function symbol="cRhoGDP_RhoGEF_A" name="RhoGDP_RhoGEF_A">
+            <Expression>RhoGDP_RhoGEF_A/cell</Expression>
+        </Function>
+        <Variable symbol="RhoGTP" value="0*cell" name="RhoGTP"/>
+        <Function symbol="cRhoGTP" name="RhoGTP">
+            <Expression>RhoGTP/cell</Expression>
+        </Function>
+        <Variable symbol="RhoGTP_GAP_A" value="0*cell" name="RhoGTP-GAP_A"/>
+        <Function symbol="cRhoGTP_GAP_A" name="RhoGTP_GAP_A">
+            <Expression>RhoGTP_GAP_A/cell</Expression>
+        </Function>
+        <Variable symbol="ROCK" value="1*cell" name="ROCK"/>
+        <Function symbol="cROCK" name="ROCK">
+            <Expression>ROCK/cell</Expression>
+        </Function>
+        <Variable symbol="CaMKII_G_actin_ADP" value="0*cell" name="CaMKII-G-actin-ADP"/>
+        <Function symbol="cCaMKII_G_actin_ADP" name="CaMKII_G_actin_ADP">
+            <Expression>CaMKII_G_actin_ADP/cell</Expression>
+        </Function>
+        <Variable symbol="G_actin_ADP" value="0*cell" name="G-actin-ADP"/>
+        <Function symbol="cG_actin_ADP" name="G_actin_ADP">
+            <Expression>G_actin_ADP/cell</Expression>
+        </Function>
+        <Variable symbol="_cAMP" value="0*cell" name="(cAMP)"/>
+        <Function symbol="c_cAMP" name="_cAMP">
+            <Expression>_cAMP/cell</Expression>
+        </Function>
+        <Variable symbol="PDE1_CaMCa4__cAMP" value="0*cell" name="PDE1-CaMCa4-(cAMP)"/>
+        <Function symbol="cPDE1_CaMCa4__cAMP" name="PDE1_CaMCa4__cAMP">
+            <Expression>PDE1_CaMCa4__cAMP/cell</Expression>
+        </Function>
+        <Variable symbol="_2_cAMP" value="0*cell" name="2(cAMP)"/>
+        <Function symbol="c_2_cAMP" name="_2_cAMP">
+            <Expression>_2_cAMP/cell</Expression>
+        </Function>
+        <Variable symbol="PKA__cAMP_2" value="0*cell" name="PKA-(cAMP)2"/>
+        <Function symbol="cPKA__cAMP_2" name="PKA__cAMP_2">
+            <Expression>PKA__cAMP_2/cell</Expression>
+        </Function>
+        <Variable symbol="PKA__cAMP_4" value="0*cell" name="PKA-(cAMP)4"/>
+        <Function symbol="cPKA__cAMP_4" name="PKA__cAMP_4">
+            <Expression>PKA__cAMP_4/cell</Expression>
+        </Function>
+        <Constant symbol="k1" value="6" name="k1"/>
+        <Constant symbol="k2" value="9.1" name="k2"/>
+        <Function symbol="R1">
+            <Expression>cell * (k1 * (_2Ca / cell) * (CaM / cell) - k2 * (CaMCa2 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_1" value="0.1" name="k1"/>
+        <Constant symbol="k2_1" value="1000" name="k2"/>
+        <Function symbol="R11">
+            <Expression>cell * (k1_1 * (CaMCa2 / cell) * (_2Ca / cell) - k2_1 * (CaMCa4 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_2" value="1000" name="k1"/>
+        <Constant symbol="k2_2" value="0.3" name="k2"/>
+        <Function symbol="R12">
+            <Expression>cell * (k1_2 * (CaN / cell) * (CaM / cell) - k2_2 * (CaN_CaM / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_3" value="1000" name="k1"/>
+        <Constant symbol="k2_3" value="0.3" name="k2"/>
+        <Function symbol="R13">
+            <Expression>cell * (k1_3 * (CaN / cell) * (CaMCa2 / cell) - k2_3 * (CaN_CaMCa2 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_4" value="46" name="k1"/>
+        <Constant symbol="k2_4" value="0.0012" name="k2"/>
+        <Function symbol="R14">
+            <Expression>cell * (k1_4 * (CaN / cell) * (CaMCa4 / cell) - k2_4 * (CaN_CaMCa4 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_5" value="6" name="k1"/>
+        <Constant symbol="k2_5" value="0.91" name="k2"/>
+        <Function symbol="R15">
+            <Expression>cell * (k1_5 * (CaN_CaM / cell) * (_2Ca / cell) - k2_5 * (CaN_CaMCa2 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_6" value="1000" name="k1"/>
+        <Constant symbol="k2_6" value="10" name="k2"/>
+        <Function symbol="R16">
+            <Expression>cell * (k1_6 * (CaN_CaMCa2 / cell) * (_2Ca / cell) - k2_6 * (CaN_CaMCa4 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_7" value="5" name="k1"/>
+        <Constant symbol="k2_7" value="1" name="k2"/>
+        <Function symbol="R17">
+            <Expression>cell * (k1_7 * (CaM / cell) * (Ng / cell) - k2_7 * (CaM_Ng / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_8" value="1" name="k1"/>
+        <Constant symbol="k2_8" value="4" name="k2"/>
+        <Function symbol="R18">
+            <Expression>cell * (k1_8 * (CaMKII / cell) * (F_actin_ATP / cell) - k2_8 * (CaMKII_F_actin_ATP / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_9" value="1" name="k1"/>
+        <Constant symbol="k2_9" value="4" name="k2"/>
+        <Function symbol="R19">
+            <Expression>cell * (k1_9 * (CaMKII / cell) * (F_actin_ADP / cell) - k2_9 * (CaMKII_F_actin_ADP / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_10" value="1" name="k1"/>
+        <Constant symbol="k2_10" value="4" name="k2"/>
+        <Function symbol="R20">
+            <Expression>cell * (k1_10 * (CaMKII / cell) * (G_actin_ATP / cell) - k2_10 * (CaMKII_G_actin_ADP / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_11" value="1" name="k1"/>
+        <Constant symbol="k2_11" value="4" name="k2"/>
+        <Function symbol="R21">
+            <Expression>cell * (k1_11 * (CaMKII / cell) * (G_actin_ADP / cell) - k2_11 * (CaMKII_G_actin_ADP / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_12" value="0.01" name="k1"/>
+        <Constant symbol="k2_12" value="0.8" name="k2"/>
+        <Function symbol="R22">
+            <Expression>cell * (k1_12 * (CaMKII / cell) * (CaMCa4 / cell) - k2_12 * (CaMKII_CaMCa4 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_13" value="0.1" name="k1"/>
+        <Function symbol="R23">
+            <Expression>cell * k1_13 * (CaMKII_CaMCa4 / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_14" value="0.0008" name="k1"/>
+        <Constant symbol="k2_14" value="0.0133" name="k2"/>
+        <Function symbol="R24">
+            <Expression>cell * (k1_14 * (CaMKIIp_CaMCa4 / cell) - k2_14 * (CaMKIIp / cell) * (CaMCa4 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_15" value="0.11" name="k1"/>
+        <Constant symbol="k2_15" value="0.1" name="k2"/>
+        <Function symbol="R25">
+            <Expression>cell * (k1_15 * (CaMKII / cell) * (CaMKIIp / cell) - k2_15 * (CaMKII_CaMKIIp / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_16" value="1" name="k1"/>
+        <Function symbol="R26">
+            <Expression>cell * k1_16 * (CaMKII_CaMKIIp / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_17" value="3.9e-05" name="k1"/>
+        <Constant symbol="k2_17" value="0.34" name="k2"/>
+        <Function symbol="R27">
+            <Expression>cell * (k1_17 * (CaMKIIp / cell) * (PP1 / cell) - k2_17 * (CaMKIIp_PP1 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_18" value="0.086" name="k1"/>
+        <Function symbol="R28">
+            <Expression>cell * k1_18 * (CaMKIIp_PP1 / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_19" value="6" name="k1"/>
+        <Constant symbol="k2_19" value="0.9" name="k2"/>
+        <Function symbol="R29">
+            <Expression>cell * (k1_19 * (AC1 / cell) * (CaMCa4 / cell) - k2_19 * (AC1_CaMCa4 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_20" value="10" name="k1"/>
+        <Constant symbol="k2_20" value="2273" name="k2"/>
+        <Function symbol="R30">
+            <Expression>cell * (k1_20 * (AC1_CaMCa4 / cell) * (ATP / cell) - k2_20 * (AC1_CaMCa4_ATP / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_21" value="5.684" name="k1"/>
+        <Function symbol="R31">
+            <Expression>cell * k1_21 * (AC1_CaMCa4_ATP / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_22" value="1.25" name="k1"/>
+        <Constant symbol="k2_22" value="1" name="k2"/>
+        <Function symbol="R32">
+            <Expression>cell * (k1_22 * (AC8 / cell) * (CaMCa4 / cell) - k2_22 * (AC8_CaMCa4 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_23" value="10" name="k1"/>
+        <Constant symbol="k2_23" value="2273" name="k2"/>
+        <Function symbol="R33">
+            <Expression>cell * (k1_23 * (AC8_CaMCa4 / cell) * (ATP / cell) - k2_23 * (AC8_CaMCa4_ATP / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_24" value="2.842" name="k1"/>
+        <Function symbol="R34">
+            <Expression>cell * k1_24 * (AC8_CaMCa4_ATP / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_25" value="100" name="k1"/>
+        <Constant symbol="k2_25" value="1" name="k2"/>
+        <Function symbol="R35">
+            <Expression>cell * (k1_25 * (PDE1 / cell) * (CaMCa4 / cell) - k2_25 * (PDE1_CaMCa4 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_26" value="4.6" name="k1"/>
+        <Constant symbol="k2_26" value="44" name="k2"/>
+        <Function symbol="R36">
+            <Expression>cell * (k1_26 * (PDE1_CaMCa4 / cell) * (_cAMP / cell) - k2_26 * (PDE1_CaMCa4__cAMP / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_27" value="11" name="k1"/>
+        <Function symbol="R37">
+            <Expression>cell * k1_27 * (PDE1_CaMCa4_cAMP / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_28" value="0.086956" name="k1"/>
+        <Constant symbol="k2_28" value="0.2" name="k2"/>
+        <Function symbol="R38">
+            <Expression>cell * (k1_28 * (PKA / cell) * (_2_cAMP / cell) - k2_28 * (PKA__cAMP_2 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_29" value="0.154" name="k1"/>
+        <Constant symbol="k2_29" value="0.22" name="k2"/>
+        <Function symbol="R39">
+            <Expression>cell * (k1_29 * (PKA__cAMP_2 / cell) * (_2_cAMP / cell) - k2_29 * (PKA__cAMP_4 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_30" value="0.016" name="k1"/>
+        <Constant symbol="k2_30" value="1.7" name="k2"/>
+        <Function symbol="R40">
+            <Expression>cell * (k1_30 * (PKA__cAMP_4 / cell) - k2_30 * (PKAr / cell) * (_2PKAc / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_31" value="1.4" name="k1"/>
+        <Constant symbol="k2_31" value="5.6" name="k2"/>
+        <Function symbol="R41">
+            <Expression>cell * (k1_31 * (I1 / cell) * (PKAc / cell) - k2_31 * (I1PKAc / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_32" value="1.4" name="k1"/>
+        <Function symbol="R42">
+            <Expression>cell * k1_32 * (I1PKAc / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_33" value="4.67" name="k1"/>
+        <Constant symbol="k2_33" value="11.2" name="k2"/>
+        <Function symbol="R43">
+            <Expression>cell * (k1_33 * (I1p / cell) * (CaN_CaMCa4 / cell) - k2_33 * (I1p_CaN_CaMCa4 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_34" value="2.8" name="k1"/>
+        <Function symbol="R44">
+            <Expression>cell * k1_34 * (I1p_CaN_CaMCa4 / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_35" value="1" name="k1"/>
+        <Constant symbol="k2_35" value="0.0011" name="k2"/>
+        <Function symbol="R45">
+            <Expression>cell * (k1_35 * (PP1 / cell) * (I1p / cell) - k2_35 * (PP1_I1p / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_36" value="1" name="k1"/>
+        <Constant symbol="k2_36" value="2" name="k2"/>
+        <Function symbol="R46">
+            <Expression>cell * (k1_36 * (PP1_I1p / cell) * (CaN_CaMCa4 / cell) - k2_36 * (PP1_I1_CaN_CaMCa4 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_37" value="0.5" name="k1"/>
+        <Function symbol="R47">
+            <Expression>cell * k1_37 * (PP1_I1_CaN_CaMCa4 / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_38" value="0.029" name="k1"/>
+        <Constant symbol="k2_38" value="0.24" name="k2"/>
+        <Function symbol="R48">
+            <Expression>cell * (k1_38 * (PP1 / cell) * (CaMKIIp / cell) - k2_38 * (PP1_CaMKIIp / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_39" value="0.086" name="k1"/>
+        <Function symbol="R49">
+            <Expression>cell * k1_39 * (PP1_CaMKIIp / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_40" value="0.001" name="k1"/>
+        <Function symbol="R50">
+            <Expression>cell * k1_40 * (AMP / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_41" value="0.011" name="k1"/>
+        <Constant symbol="k2_41" value="0.001" name="k2"/>
+        <Function symbol="R51">
+            <Expression>cell * (k1_41 * (Cdc42GEF / cell) * (CaMKIIp / cell) - k2_41 * (Cdc42GEF_CaMKIIp / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_42" value="0.1" name="k1"/>
+        <Function symbol="R52">
+            <Expression>cell * k1_42 * (Cdc42GEF_CaMKIIp / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_43" value="0.011" name="k1"/>
+        <Constant symbol="k2_43" value="0.001" name="k2"/>
+        <Function symbol="R53">
+            <Expression>cell * (k1_43 * (Cdc42GEF_A / cell) * (PP1 / cell) - k2_43 * (PP1_Cdc42GEF_A / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_44" value="0.01" name="k1"/>
+        <Function symbol="R54">
+            <Expression>cell * k1_44 * (PP1_Cdc42GEF_A / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_45" value="0.825" name="k1"/>
+        <Constant symbol="k2_45" value="0.075" name="k2"/>
+        <Function symbol="R55">
+            <Expression>cell * (k1_45 * (Cdc42GDP / cell) * (Cdc42GEF_A / cell) - k2_45 * (Cdc42GDP_Cdc42GEF_A / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_46" value="0.75" name="k1"/>
+        <Function symbol="R56">
+            <Expression>cell * k1_46 * (Cdc42GDP_Cdc42GEF_A / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_47" value="0.011" name="k1"/>
+        <Constant symbol="k2_47" value="0.001" name="k2"/>
+        <Function symbol="R57">
+            <Expression>cell * (k1_47 * (GAP / cell) * (CaMKIIp / cell) - k2_47 * (GAP_CaMKIIp / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_48" value="0.1" name="k1"/>
+        <Function symbol="R58">
+            <Expression>cell * k1_48 * (GAP_CaMKIIp / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_49" value="0.11" name="k1"/>
+        <Constant symbol="k2_49" value="0.01" name="k2"/>
+        <Function symbol="R59">
+            <Expression>cell * (k1_49 * (Cdc42GTP / cell) * (GAP_A / cell) - k2_49 * (Cdc42GTP_GAP_A / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_50" value="0.1" name="k1"/>
+        <Function symbol="R60">
+            <Expression>cell * k1_50 * (Cdc42GTP_GAP_A / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_51" value="0.011" name="k1"/>
+        <Constant symbol="k2_51" value="0.001" name="k2"/>
+        <Function symbol="R61">
+            <Expression>cell * (k1_51 * (GAP_A / cell) * (PP1 / cell) - k2_51 * (GAP_A_PP1 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_52" value="0.01" name="k1"/>
+        <Function symbol="R62">
+            <Expression>cell * k1_52 * (GAP_A_PP1 / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_53" value="0.02" name="k1"/>
+        <Constant symbol="k2_53" value="0.001" name="k2"/>
+        <Function symbol="R63">
+            <Expression>cell * (k1_53 * (Cdc42GTP / cell) * (WASP / cell) - k2_53 * (Cdc42GTP_WASP / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_54" value="0.1" name="k1"/>
+        <Constant symbol="k2_54" value="0" name="k2"/>
+        <Function symbol="R64">
+            <Expression>cell * (k1_54 * (Arp2_3 / cell) * (Cdc42GTP_WASP / cell) - k2_54 * (Arp2_3_A / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_55" value="0.07525" name="k1"/>
+        <Constant symbol="k2_55" value="0.034" name="k2"/>
+        <Function symbol="R65">
+            <Expression>cell * (k1_55 * (SSH1 / cell) * (CaN_CaMCa4 / cell) - k2_55 * (SSH1_CaN_CaMCa4 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_56" value="0.34" name="k1"/>
+        <Function symbol="R66">
+            <Expression>cell * k1_56 * (SSH1_CaN_CaMCa4 / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_57" value="410.88" name="k1"/>
+        <Constant symbol="k2_57" value="12.7" name="k2"/>
+        <Function symbol="R67">
+            <Expression>cell * (k1_57 * (SSH1_A / cell) * (CaMKIIp / cell) - k2_57 * (SSH1_A_CaMKIIp / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_58" value="127" name="k1"/>
+        <Function symbol="R68">
+            <Expression>cell * k1_58 * (SSH1_A_CaMKIIp / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_59" value="3.3" name="k1"/>
+        <Constant symbol="k2_59" value="0.9" name="k2"/>
+        <Function symbol="R69">
+            <Expression>cell * (k1_59 * (LIMK / cell) * (ROCK_A / cell) - k2_59 * (LIMK_ROCK_A / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_60" value="0.9" name="k1"/>
+        <Function symbol="R70">
+            <Expression>cell * k1_60 * (LIMK_ROCK_A / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_61" value="0.0935" name="k1"/>
+        <Constant symbol="k2_61" value="0.034" name="k2"/>
+        <Function symbol="R71">
+            <Expression>cell * (k1_61 * (LIMK_A / cell) * (SSH1_A / cell) - k2_61 * (LIMK_A_SSH1_A / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_62" value="0.34" name="k1"/>
+        <Function symbol="R72">
+            <Expression>cell * k1_62 * (LIMK_A_SSH1_A / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_63" value="0.0935" name="k1"/>
+        <Constant symbol="k2_63" value="0.034" name="k2"/>
+        <Function symbol="R73">
+            <Expression>cell * (k1_63 * (Cofilin / cell) * (SSH1_A / cell) - k2_63 * (Cofilin_SSH1_A / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_64" value="0.34" name="k1"/>
+        <Function symbol="R74">
+            <Expression>cell * k1_64 * (Cofilin_SSH1_A / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_65" value="0.0935" name="k1"/>
+        <Constant symbol="k2_65" value="0.034" name="k2"/>
+        <Function symbol="R75">
+            <Expression>cell * (k1_65 * (Cofilin_A / cell) * (LIMK_A / cell) - k2_65 * (Cofilin_A_LIMK_A / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_66" value="0.34" name="k1"/>
+        <Function symbol="R76">
+            <Expression>cell * k1_66 * (Cofilin_A_LIMK_A / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_67" value="0.01" name="k1"/>
+        <Function symbol="R77">
+            <Expression>cell * k1_67 * (RhoGEF_CaMKIIp / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_68" value="0.11" name="k1"/>
+        <Constant symbol="k2_68" value="0.01" name="k2"/>
+        <Function symbol="R78">
+            <Expression>cell * (k1_68 * (RhoGEF_A / cell) * (PP1 / cell) - k2_68 * (RhoGEF_A_PP1 / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_69" value="0.1" name="k1"/>
+        <Function symbol="R79">
+            <Expression>cell * k1_69 * (RhoGEF_A_PP1 / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_70" value="0.825" name="k1"/>
+        <Constant symbol="k2_70" value="0.075" name="k2"/>
+        <Function symbol="R80">
+            <Expression>cell * (k1_70 * (RhoGDP / cell) * (RhoGEF_A / cell) - k2_70 * (RhoGDP_RhoGEF_A / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_71" value="0.75" name="k1"/>
+        <Function symbol="R81">
+            <Expression>cell * k1_71 * (RhoGDP_RhoGEF_A / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_72" value="0.11" name="k1"/>
+        <Constant symbol="k2_72" value="0.01" name="k2"/>
+        <Function symbol="R82">
+            <Expression>cell * (k1_72 * (RhoGTP / cell) * (GAP_A / cell) - k2_72 * (RhoGTP_GAP_A / cell))</Expression>
+        </Function>
+        <Constant symbol="k1_73" value="0.1" name="k1"/>
+        <Function symbol="R83">
+            <Expression>cell * k1_73 * (RhoGTP_GAP_A / cell)</Expression>
+        </Function>
+        <Constant symbol="k1_74" value="0.02" name="k1"/>
+        <Constant symbol="k2_74" value="0.001" name="k2"/>
+        <Function symbol="R84">
+            <Expression>cell * (k1_74 * (RhoGTP / cell) * (ROCK / cell) - k2_74 * (ROCK_A / cell))</Expression>
+        </Function>
+        <Constant symbol="f" value="0.0"/>
+        <Constant symbol="b" value="0.0"/>
+    </Global>
+    <CellTypes>
+        <CellType class="biological" name="actin"/>
+    </CellTypes>
+    <CellPopulations>
+        <Population size="1" type="actin"/>
+    </CellPopulations>
+</MorpheusModel>
